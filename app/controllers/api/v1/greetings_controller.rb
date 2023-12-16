@@ -1,6 +1,6 @@
 class Api::V1::GreetingsController < ApplicationController
   def random_greeting
-    @greeting = Greeting.find(Greeting.pluck(:id).sample)
+    @greeting = Greeting.all.sample
     render json: @greeting, status: :ok
   end
 end

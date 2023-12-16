@@ -21,14 +21,14 @@ default: &default
 
 development:
   <<: *default
-  database: react_rails_oneApp_development
+  database: react-rails-twoApp_development
   username: postgres
   password: <%= ENV['DATABASE_PASSWORD'] %>
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
   # When left blank, PostgreSQL will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: react_rails_oneApp
+  #username: react-rails-twoApp
 
   # The password associated with the PostgreSQL role (username).
   #password:
@@ -56,7 +56,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: react_rails_oneApp_test
+  database: react-rails-twoApp_test
   username: postgres
   password: <%= ENV['DATABASE_PASSWORD'] %>
 
@@ -82,6 +82,6 @@ test:
 #
 production:
   <<: *default
-  database: react_rails_oneApp_production
+  database: react-rails-twoApp_production
   username: postgres
   password: <%= ENV['DATABASE_PASSWORD'] %>
