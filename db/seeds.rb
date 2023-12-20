@@ -8,8 +8,8 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-Greeting.create(message: 'Hola')
-Greeting.create(message: 'Hey')
-Greeting.create(message: 'Hola')
-Greeting.create(message: 'Bonjour')
-Greeting.create(message: 'Nǐ hǎo')
+greeting1 = Greeting.create(message: "This is my first greeting")
+greeting2 = Greeting.create(message: "This is my second greeting")
+greeting3 = Greeting.create(message: "This is my third greeting")
+greeting4 = Greeting.create(message: "This is my fourth greeting")
+greeting5 = Greeting.create(message: "This is my fifth greeting")
